@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <script defer src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/800340eaca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------header--------->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a class="nav-link">
+                    <span class="link-text logo-text">Richard</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#header" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#aboutMe" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+                    <span class="link-text">About Me</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#myProducts" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
+                    <span class="link-text">Properties</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contactMe" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M121 32C91.6 32 66 52 58.9 80.5L1.9 308.4C.6 313.5 0 318.7 0 323.9V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V323.9c0-5.2-.6-10.4-1.9-15.5l-57-227.9C446 52 420.4 32 391 32H121zm0 64H391l48 192H387.8c-12.1 0-23.2 6.8-28.6 17.7l-14.3 28.6c-5.4 10.8-16.5 17.7-28.6 17.7H195.8c-12.1 0-23.2-6.8-28.6-17.7l-14.3-28.6c-5.4-10.8-16.5-17.7-28.6-17.7H73L121 96z"/></svg>
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+
+            <li class="nav-item" id="themeButton">
+                <a href="#" class="nav-link">
+                    <svg id="moon" class="hidden" onclick="changeImage()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                    <svg id="sun" class="visible" onclick="changeImage()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                    <span class="link-text">Theme</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="header">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+            <h1>Buy & Sell Property Here</h1>
+            <p>
+                &emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Elit pellentesque habitant morbi tristique senectus et. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Massa sed elementum tempus egestas sed. Accumsan sit amet nulla facilisi morbi tempus iaculis. Lorem ipsum dolor sit amet consectetur adipiscing elit. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Quis lectus nulla at volutpat diam ut venenatis tellus. Risus quis varius quam quisque id diam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Vitae auctor eu augue ut lectus arcu bibendum. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Commodo ullamcorper a lacus vestibulum sed arcu.<br><br>
+                &emsp;&emsp;Ornare arcu odio ut sem nulla pharetra diam. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Et malesuada fames ac turpis egestas sed tempus urna. At volutpat diam ut venenatis tellus in metus vulputate eu. At tempor commodo ullamcorper a lacus vestibulum. Iaculis urna id volutpat lacus. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Est lorem ipsum dolor sit. Aliquam ut porttitor leo a. Ornare lectus sit amet est placerat in egestas. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada.<br><br>
+                &emsp;&emsp;Cursus vitae congue mauris rhoncus. Convallis aenean et tortor at risus viverra adipiscing. Eget duis at tellus at urna condimentum mattis pellentesque id. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Ultrices sagittis orci a scelerisque purus. Tincidunt id aliquet risus feugiat. Tortor aliquam nulla facilisi cras. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Ullamcorper eget nulla facilisi etiam. Eu sem integer vitae justo eget magna. Tincidunt eget nullam non nisi est sit amet facilisis. Feugiat nibh sed pulvinar proin. Laoreet id donec ultrices tincidunt arcu non sodales. Tempor orci eu lobortis elementum. Cras fermentum odio eu feugiat pretium. In ornare quam viverra orci. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Ut diam quam nulla porttitor massa id neque aliquam.<br><br>
+                &emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Lectus sit amet est placerat in. Risus quis varius quam quisque. Aliquet sagittis id consectetur purus ut faucibus. Nulla aliquet enim tortor at auctor urna. At auctor urna nunc id cursus metus aliquam eleifend. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Congue eu consequat ac felis donec et odio pellentesque. Ullamcorper sit amet risus nullam eget. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Morbi tincidunt augue interdum velit. Libero volutpat sed cras ornare arcu dui vivamus. Purus sit amet luctus venenatis lectus magna. Neque sodales ut etiam sit amet nisl purus in. Morbi tincidunt ornare massa eget egestas purus. Sed felis eget velit aliquet sagittis id consectetur. Massa sapien faucibus et molestie ac feugiat sed lectus.<br><br>
+                &emsp;&emsp;Nibh praesent tristique magna sit amet purus gravida. Blandit cursus risus at ultrices mi. Euismod quis viverra nibh cras pulvinar. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Lacus sed viverra tellus in hac habitasse. Nibh venenatis cras sed felis. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Et leo duis ut diam. Mattis aliquam faucibus purus in. Lectus nulla at volutpat diam. Mi bibendum neque egestas congue quisque. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Aliquet porttitor lacus luctus accumsan. Odio ut sem nulla pharetra. Nullam ac tortor vitae purus faucibus ornare. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Ac turpis egestas sed tempus. Bibendum ut tristique et egestas quis. Sodales neque sodales ut etiam sit amet nisl purus.<br><br>
+            </p>
+        </div>
+        <!---------about--------->
+        <div>
+            <div id="aboutMe">
+                <h1>About Me</h1>
+                <h4>Richard Marquez</h4>
+                <p>Hello, I am a Computer Science graduate from Arizona State University.</p>
+            </div>
+        </div>
+        <!---------properties--------->
+        <div id="myProducts">
+            <h1>Properties For Sale</h1>
+            <div class="myProducts-gallery">
+                <img src= "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="click here" 
+                    onclick="myImageFunction(this)">
+                <img src= "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="click here"
+                    onclick="myImageFunction(this)">
+                <img src= "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="click here" 
+                    onclick="myImageFunction(this)">
+                <img src= "https://images.unsplash.com/photo-1430285561322-7808604715df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="click here" 
+                    onclick="myImageFunction(this)">
+            </div>
+            <div class="image-container">
+                <img id="img-Box" src= "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Click Here">
+                <p>
+                    Address: 123 Forest Ave. Tempe, Arizona<br>
+                    Bed Rooms: 4<br>
+                    Bathrooms: 3<br>
+                    Size: 1,600 sq ft<br>
+                    Price: $875,000<br>
+                </p>
+            </div>
+        </div>
+        <!---------contact--------->
+        <div id="contactMe">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> rmarqu20@asu.edu</p>
+                <p><i class="fa-solid fa-phone"></i> 623-226-0164</p>
+                <div class="social-icons">
+                    <a href="https://github.com/rmarqu20"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/richard-marquez-cortes-193b3b223/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" onclick="submitForm()" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Richard Marquez. All rights reserved.</p>
+            </div>
+        </div> 
+    </main>
+</body>
+</html>
