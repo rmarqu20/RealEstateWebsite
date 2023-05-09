@@ -301,7 +301,7 @@ h1 {
 }
 
 .contact-right form {
-    width: 100%;
+    width: 95%;
 }
 
 form input, form textarea {
@@ -347,11 +347,15 @@ form btn2 {
 }
 
 .copyright {
-    width: 100%;
+    width: 98%;
     text-align: center;
     padding: 20px;
     background-color: #262626;
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+.copyright footer {
+    color: white;
 }
